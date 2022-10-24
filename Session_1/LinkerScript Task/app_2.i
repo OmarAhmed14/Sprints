@@ -1,0 +1,10 @@
+# 1 "app_2.c"
+# 1 "<command-line>"
+# 1 "app_2.c"
+extern char u8InitGLobalVar ;
+
+void vidFunc(short int *u16FuncArgPtr)
+{
+ (*u16FuncArgPtr)++;
+ u8InitGLobalVar--;
+}

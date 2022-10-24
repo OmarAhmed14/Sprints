@@ -1,0 +1,5 @@
+Explanition:
+
+1- i add global variable in app_main.c file called sprints with data type short int.
+2- passing attribute to the compiler to put this variable in sprints section.
+3- in linker script, adding section called sprints and it locates in FLASH to store variable in it.
