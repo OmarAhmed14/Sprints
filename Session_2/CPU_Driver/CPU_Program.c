@@ -22,8 +22,8 @@ void Cpu_SwitchToUserMode(void)
 void Cpu_SwitchToPrivMode(void)
 {
 	/*First Must Enter in handler Mode and switch to privMode*/
-	__asm ("SVC #0x32");
-
+	/*this Function Must Call in SVC ISR to be in handler mode*/
+	
 	/*In Control Register put bit0 =0 to switch to privMode*/
 	__asm ("MOV R1, #0x0");
 	__asm ("MSR CONTROL, R1");
