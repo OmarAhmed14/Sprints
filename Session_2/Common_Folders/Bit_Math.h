@@ -7,7 +7,7 @@
 #define Toggle_Bit(reg,bit) (reg^=(1<<bit))
 
 /*Peripheral BitBanding Memory*/
-#define Set_Bit_BitBandingAlias(Bit_Band_region_reg,bit)   (*((unsigned int volatile*)(0x42000000+4*(((reg-0x4000000)/4)*32+bit))))=1
-#define Clear_Bit_BitBandingAlias(Bit_Band_region_reg,bit) (*((unsigned int volatile*)(0x42000000+4*(((reg-0x4000000)/4)*32+bit))))=0
+#define Set_Bit_BitBandingAlias(Bit_Band_region_reg,bit)   (*((unsigned int volatile*)((unsigned int volatile*)0x42000000+4*(((Bit_Band_region_reg-0x4000000))*32+bit))))=1
+#define Clear_Bit_BitBandingAlias(Bit_Band_region_reg,bit) (*((unsigned int volatile*)((unsigned int volatile*)0x42000000+4*(((Bit_Band_region_reg-0x4000000))*32+bit))))=0
 
 #endif
