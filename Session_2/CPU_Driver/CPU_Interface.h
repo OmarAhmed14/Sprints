@@ -13,4 +13,6 @@ void Cpu_StartCriticalSection(void);
 
 void Cpu_EndCriticalSection(void);
 
+void SVC_Handler(void);
+
 #endif
