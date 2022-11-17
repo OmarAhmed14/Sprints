@@ -96,7 +96,7 @@ Mcu_RawResetType Mcu_GetResetRawValue(void)
 	/*CLEAR SW STATE BIT*/
 	Clear_Bit(RESC,SW);
 	
-	/*Knowing Types pf Reset which comes*/
+	/*Knowing Types of Reset which comes*/
 
 	if (Get_Bit(RESC,EXT))
 		return EXT;
