@@ -114,7 +114,7 @@ Mcu_RawResetType Mcu_GetResetRawValue(void)
 		return MOSCFAIL;
 }
 
-void Mcu_PerformReset(void)  /*TRIDDER SW RESET*/
+void Mcu_PerformReset(void)  /*TRIGGER SW RESET*/
 {
 	/*CLEAR SW STATE BIT*/
 	Clear_Bit(RESC,SW);
